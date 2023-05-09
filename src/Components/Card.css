@@ -1,0 +1,75 @@
+.card{
+    max-width: 30rem;
+    height: auto;
+    background-color: var(--Dark-Grayish-Blue);
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.7rem;
+}
+
+.advice-id {
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--Neon-Green);
+}
+
+.advice {
+    font-size: 28px;
+    color: var(--Light-Cyan);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 0.6rem;
+}
+
+.mobile-divider {
+    display: none;
+}
+
+.btn {
+    background: url(../../public/icon-dice.svg) no-repeat center, var(--Neon-Green);
+    width: 50px;
+    height: 50px;
+    background-size: 20px 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -25px;
+    left: 45%;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 0 15px 7px hsla(150, 100%, 66%, 0.5);
+}
+
+@media (max-width:550px) {
+
+    .desktop-divider {
+        display: none;
+    }
+
+    .mobile-divider {
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .advice-id {
+        font-size: 8px;
+    }
+
+    .advice {
+        font-size: 22px;
+    }
+}
